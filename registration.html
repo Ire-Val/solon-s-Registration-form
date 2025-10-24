@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fefefe;
+      background: linear-gradient(120deg, #fddde6, #d1f2eb, #fef9e7);
+      color: #444;
+      margin: 0;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #444;
+      background-color: #f9e1f0;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+
+    form {
+      background: #ffffffcc;
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=date],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .gender, .hobbies {
+      margin-bottom: 15px;
+    }
+
+    .gender label, .hobbies label {
+      font-weight: normal;
+      margin-right: 20px;
+    }
+
+    .buttons {
+      text-align: center;
+    }
+
+    input[type=submit], input[type=reset] {
+      background-color: #f9a8d4;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      margin: 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    input[type=submit]:hover {
+      background-color: #f472b6;}
+
+    input[type=reset]:hover {background-color: #a5b4fc;}
+
+  </style>
+</head>
+<body>
+
+  <h1>Student Registration Form</h1>
+  <form action="thankyou.html" method="get">
+
+ 
+
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+
+     <label for="mname">Middle Initial:</label>
+    <input type="text" id="mname" name="mname" placeholder="Enter your middle Initial" required>
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+
+
+
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter a password" required>
+
+     Email
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+  
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+
+
+    <div class="gender">
+      <label>Gender:</label>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="other"> Other</label>
+    </div>
+
+
+    <div class="hobbies">
+      <label>Hobbies:</label>
+      <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+      <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+      <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+    </div>
+
+ 
+    <label for="course">Select Course:</label>
+    <select id="course" name="course">
+      <option value="it">Bachelor of Science in Information Technology (BSIT)</option>
+      <option value="cs">Bachelor of Science in Tourism Management (BSTM)</option>
+      <option value="is">Bachelor of Elementary Education (BEEd)</option>
+      <option value="se">Bachelor of Secondary Education (BSEd)</option>
+    </select>
+
+   
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="4" placeholder="Enter your address"></textarea>
+
+
+    <div class="buttons">
+      <input type="submit" value="Submit">
+    </div>
+
+  </form>
+</body>
+</html>
